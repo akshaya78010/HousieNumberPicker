@@ -30,12 +30,14 @@ function generateNumber() {
 
 function print_order() {
   element.innerText = row;
-  if (element.style.display == "none") {
+  if (element.style.display == "none" || element.style.display == "") {
     element.style.display = "block";
     order_button.innerText = "close";
   } else {
     element.style.display = "none";
-    order_button.innerText = "order";
+    if (order_button.innerText == "close") {
+      order_button.innerText = "order";
+    }
   }
 }
 
