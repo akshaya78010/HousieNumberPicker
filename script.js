@@ -64,5 +64,5 @@ function reset_board() {
   mpp.clear();
   arr = [];
   current_number.innerText = "None";
-  element.innerText = "None";
+  element.innerText = "";
 }
